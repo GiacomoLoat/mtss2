@@ -56,6 +56,5 @@ public class IntegerToRomanTest {
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(1001));
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(-1));
     }
-    //@test (expeted=IllegalArgumentException.class) da mettere un metodo per ogni eccezione
-    //perchè assertThrows non va con junit4
+
 }

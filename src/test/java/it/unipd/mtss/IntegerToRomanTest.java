@@ -6,6 +6,7 @@ package it.unipd.mtss;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class IntegerToRomanTest {
     @Test
@@ -55,5 +56,6 @@ public class IntegerToRomanTest {
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(1001));
         assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(-1));
     }
-
+    //@test (expeted=IllegalArgumentException.class) da mettere un metodo per ogni eccezione
+    //perchè assertThrows non va con junit4
 }

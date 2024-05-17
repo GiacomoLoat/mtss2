@@ -49,4 +49,10 @@ public class RomanPrinterTest {
         assertEquals("  __  __ \n |  \\/  |\n | \\  / |\n | |\\/| |\n | |  | |\n |_|  |_|\n", RomanPrinter.print(1000));
     }   
 
+    @Test
+    public void testIllegalArgumentException() {
+        assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(0));
+        assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(1001));
+        assertThrows(IllegalArgumentException.class, () -> RomanPrinter.print(-1));
+    }
 }
